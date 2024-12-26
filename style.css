@@ -1,0 +1,320 @@
+.navbar-brand{
+  font-family: "Headland_One variant0", Tofu;
+  font-size:x-large;
+}
+nav span{
+  color: #029bf4ec;
+}
+
+/* slidding img heading shadow */
+.carousel-item h5{
+  text-shadow: 00 3px black , 00 2px  ;
+}
+
+/* why we */
+.whywe{
+  color: #d15959ec;
+  text-shadow: #343a40;
+}
+
+/* cards */
+.card-title{
+  color: #029bf4ec;
+}
+
+
+/* why we moving boxes */
+/* Marquee Container */
+.marquee-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .marquee {
+    display: flex;
+    animation: scroll 12s linear infinite;
+    will-change: transform;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* Box Styling */
+  .box {
+    height: 180px;
+    width: 140px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 20px;
+    font-weight: 400;
+  }
+  
+  /* SVG Icon Styling */
+  .svg-icon {
+    width: 120px;
+    height: 120px;
+  }
+   
+  /* button,book free consultation */
+  .btn-consultation {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.2s ease-in-out;
+  }
+
+  @media (max-width: 576px) {
+    .btn-consultation {
+      font-size: 1rem;
+      padding: 0.6rem 1.2rem;
+    }
+  }
+
+  /* Styling for the target section */
+  #targetSection {
+    margin-top: 100px;
+    padding: 50px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+      
+      /* short intro */
+       .short-intro{
+        text-align: center;
+       }
+
+
+       
+       /* External CSS for additional styling */
+       .whatsapp-button {
+        position: fixed;
+        top: 47%;
+        right: -10px;
+        transform: translateY(-50%);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.whatsapp-button img{
+    width: 30px;
+    height: 30px;
+}
+
+/* External CSS for additional styling */
+.call-button {
+    position: fixed;
+    top: 56%; /* Adjust position to match your layout */
+    right: -10px;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-button img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* scroll img/mission,vision */
+
+ /* Container to allow horizontal scrolling */
+ .scroll-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 20px 0;
+  gap: 20px; /* Space between boxes */
+}
+
+.box {
+  min-width: 365px; /* Minimum width of each box */
+  flex-shrink: 0; /* Prevent boxes from shrinking */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 30px 20px; /* Increased padding for a taller box */
+  text-align: center;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box img {
+  width: 150px; /* Smaller image size */
+  height: 80px;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.box h3 {
+  margin-top: 10px;
+  font-size: 1.25rem;
+}
+
+.box p {
+  font-size: 0.875rem;
+  color: #555;
+  margin-top: 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .box {
+    min-width: 280px; /* Shrink box size on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    min-width: 200px; /* Further shrink box size on small screens */
+  }
+}
+
+
+/* Popover */
+/* Style for the popover title */
+.popover-header {
+  background-color: #ffc107; /* Change to desired background color for the title */
+  color: #000; /* Change text color if needed */
+  font-weight: bold; /* Optional: Make the title bold */
+}
+
+/* Style for the popover body content */
+.popover-body {
+  background-color: #f8f9fa; /* Change to desired background color for the content */
+  color: #343a40; /* Change text color if needed */
+  padding: 15px; /* Optional: Adjust padding for better spacing */
+}
+
+.box img{
+  background-color: #000;
+}
+
+/* other services */
+#sspp{
+  color: #d15959ec;
+}
+/* Style for images inside <p> tags */
+p img {
+  width: 270px; /* Default width */
+  height: 150px; /* Default height */
+  object-fit: cover; /* Ensures the image fits nicely */
+  display: block; /* Ensures no inline spacing issues */
+  margin: 0 auto; /* Centers the image within the parent <p> */
+}
+
+/* Adjust images for responsiveness */
+@media (max-width: 768px) {
+  .addingimg p img {
+    width: 180px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .addingimg p img {
+    width: 150px;
+    height: 90px;
+  }
+}
+
+/* Reduce size and padding for active scrollspy item */
+.nav-link.active {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: rgb(19, 15, 15) !important; /* Ensure the text is visible */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  padding: 5px 10px; /* Adjust padding (top-bottom: 5px, left-right: 10px) */
+}
+
+/* Responsive adjustments for mobile view */
+@media (max-width: 768px) {
+  .nav-link.active {
+    padding: 3px 8px; /* Smaller padding for mobile */
+    font-size: 14px; /* Reduce font size if necessary */
+  }
+}
+
+/* our recent profucts heading */
+#Portfolio{
+  color: #029bf4ec;
+}
+
+/* contact us title color*/
+#contactustitle{
+  color: #d15959ec;
+}
+ /* map title ccolor */
+ #mapid{
+  color: #d15959ec;
+ }
+ .explore{
+  color: #029bf4ec;
+ }
+
+#socialmediafoot a{
+  text-decoration: none;
+}
+/* hover for links footer */
+#socialmediafoot a {
+  color: whites; /* Default text color */
+  text-decoration: none; /* Removes underline */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#socialmediafoot a:hover {
+  color: #d15959ec; /* Change to your desired hover color */
+  transform: scale(1.1); /* Slightly enlarge the link on hover */
+  text-decoration:underline /* Adds underline on hover */
+}
+
+.list-unstyled:hover{
+  text-decoration: underline;
+}
+
+/* services- drwopdowns */
+.btn-group {
+  margin-bottom: 10px; /* Adds space between buttons */
+}
+@media (max-width: 767.98px) {
+  .btn-group {
+    width: 100%; /* Make the buttons take full width on mobile */
+  }
+  .btn {
+    width: 100%; /* Make each button full width on mobile */
+  }
+}
+
+#servicesdr{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+/* scrollspy */
+.scrollspy-container {
+  max-height: 400px;
+  overflow-y:auto;
+  border: solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  padding: 12px;
+}
+
+/*  */
